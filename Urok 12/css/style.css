@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper .modal_window{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 36%;
+    top: 25%;
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 300px;
+    filter: drop-shadow( 0 0 10px gray);
+    border-radius: 10px;
+    animation: shake 0.5s linear alternate;
+    z-index: 10;
+}
+.hidden:nth-of-type(1){
+    display: none;
+}
+.hidden:nth-of-type(2){
+    display: none;
+}
+.modal-frame{
+    width: 333px;
+    height: 220px;
+    left: 0;
+    position: relative;
+}
+#BlurEffect{
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.51);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+.InputName-tel{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 33px;
+}
+.InputModalFamilia-tel{
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    height: 33px;
+}
+.InputModalTel-tel{
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    height: 33px;
+}
+.InputModalPost-tel{
+    position: absolute;
+    top: 141.5px;
+    width: 100%;
+    height: 33px;
+}
+.modal-button{
+    width: 153px;
+    height: 33px;
+    border-radius: 10px;
+    position: absolute;
+    top: 188px;
+    left: 110px;
+}
+.modal-submite-button{
+    background-color: rgb(62, 182, 62);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+input{
+    outline: none;
+}
+@keyframes shake{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.modal-showinfo-window{
+    width: 145px;
+    height: 120px;
+    background: rgb(238, 238, 238);
+    position: absolute; 
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    filter: drop-shadow( 0 0 1px gray);
+    animation: showinfo-button 1s ease;
+    left: 366px;
+}
+.modal-delete-button{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 77px;
+    left: 17px;
+    color: white;
+    border: none;
+    background: rgb(62, 182, 62);
+    border-radius: 5px;
+}
+@keyframes showinfo-button{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.modal-showinfo-p1{
+    margin-left: 10px;
+}
+.modal-showinfo-p2{
+    margin-left: 10px;
+}
+.modal-showinfo-p3{
+    margin-left: 10px;
+}
+.modal-showinfo-p4{
+    margin-left: 10px;
+}
